@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   Arbitrary arguments may not be something that you end up using all that
 #   often and we may not use them often in this class, but I wanted to make
@@ -18,7 +18,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+def roll_call(*names):
+    print(names)
+roll_call("James", "Paul", "Dylan", "Ryan", "Guy")
 ###############################################################################
 # TODO: 2. (3 pts)
 #
@@ -36,3 +38,6 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def pet_bio(**information):
+    print(f"my pet is {information["age"]}, and is a {information["breed"]}.")
+pet_bio(age="seven months old", breed= "German Shepherd", weight= "thirty pounds", height= "two feet, seven inches" )

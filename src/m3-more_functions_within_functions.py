@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,30 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def add(first_param, second_param):
+    added= int(first_param) + int(second_param)
+    return added
+
+def subtract(first_param, second_param):
+    subtracted= int(first_param) - int(second_param)
+    return subtracted
+
+def multiply(first_param, second_param):
+    multiplied= int(first_param) * int(second_param)
+    return multiplied
+
+def divide(first_param, second_param):
+    divided= int(first_param) / int(second_param)
+    return divided
+
+def exponent(first_param, second_param):
+    exponented= int(first_param) ** int(second_param)
+    return exponented
+
+
 
 ###############################################################################
-# TODO: 2. (8 pts)
+# DONE: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -59,9 +80,30 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+import math
+def main():
+    print("Hello! How lovely for you to be here!")
+    print("This is a calculator, what would you like your first variable to be?")
+    first_param=input()
+    print("thanks, now how about a second variable?")
+    second_param=input()
+    print("Thanks")
+    added=add(first_param,second_param)
+    subtracted=subtract(first_param,second_param)
+    multiplied=multiply(first_param,second_param)
+    divided=divide(first_param,second_param)
+    exponented=exponent(first_param,second_param)
+    print(f"""Added:{added}
+Subtracted:{subtracted}
+Multiplied:{multiplied}
+Divided:{divided}
+Exponented:{exponented}
+Thanks, that was awesome! Bye!
+          """)
+    return added, subtracted, multiplied, divided
+main()
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# DONE: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this

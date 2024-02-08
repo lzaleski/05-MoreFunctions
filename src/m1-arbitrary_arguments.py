@@ -22,7 +22,7 @@ def roll_call(*names):
     print(names)
 roll_call("James", "Paul", "Dylan", "Ryan", "Guy")
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE: 2. (3 pts)
 #
 #   This time, let's create a function that uses arbitrary keyword arguments.
 #

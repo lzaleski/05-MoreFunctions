@@ -100,7 +100,7 @@ Divided:{divided}
 Exponented:{exponented}
 Thanks, that was awesome! Bye!
           """)
-    return added, subtracted, multiplied, divided
+    return added, subtracted, multiplied, divided, exponented
 main()
 ###############################################################################
 # DONE: 3. EXTRA CREDIT (4 pts)
